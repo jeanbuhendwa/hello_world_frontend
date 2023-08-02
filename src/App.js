@@ -1,15 +1,18 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Greeting from "./components/Greeting";
+import React from 'react';
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+  RouterProvider,
+} from 'react-router-dom';
+import Greeting from './components/Greeting';
 
-const App = () => {
-  return (
-    <Router>
-      <Switch>
-        <Route path="/" component={Greeting} />
-      </Switch>
-    </Router>
-  );
-};
+const router = createBrowserRouter(
+  createRoutesFromElements(<Route index element={<Greeting />} />),
+);
+
+function App() {
+  return <RouterProvider router={router} />;
+}
 
 export default App;
