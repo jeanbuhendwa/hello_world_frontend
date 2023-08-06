@@ -1,6 +1,6 @@
 <div align="center">
 
-  <h3><b>hello_world_frontend</b></h3>
+  <h3><b>hello_frontend</b></h3>
 
 </div>
 
